@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>System - Awesomizer</name>
+	<author>Sean Goresht</author>
+	<creationDate>July 15, 2012</creationDate>
+	<copyright>Copyright (c) 2012 Sean Goresht. All rights reserved.</copyright>
+	<authorEmail>seangores@gmail.com</authorEmail>
+	<authorUrl>www.seangoresht.com</authorUrl>
+	<version>1</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Joomla Awesomeizer loads some really useful libraries for your convienience... on both your back-end and your front-end.</description>
+	<files>
+		<filename plugin="awesomeizer">awesomeizer.php</filename>
+		<filename>jquery.noconflict.js</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="version" type="text" default="1.7.2" size="80" label="jQuery Version" description="Enter the jquery version." />
+				<field name="noconflict" type="list" default="1" label="Enable Jquery Noconflict" description="Recommended in Joomla versions less than 3.0" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="modernizr" type="list" default="1" label="Load Modernizr" description="Load in modernizr to enable polyfills and fallbacks for CSS3 and HTML5 on older browsers (highly recommended)" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="bootstrap" type="list" default="1" label="Load Twitter Bootstrap JS" description="Load Twitter Bootstrap javascript component library (customized for all components)" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="peity" type="list" default="1" label="Load jQuery Peity" description="jQuery piety, for easily visualizing simple data (ex. 1/5 will show you a pie chart with that data with a simple method)" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="datatables" type="list" default="1" label="Load dataTables" description="Load dataTables for easy viewing of your tables in your admin back-end and on your front-end" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="highcharts" type="list" default="1" label="Load highCharts" description="Load highcharts for beautiful tables with javascript." >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="chosen" type="list" default="1" label="Load chosen" description="Make all your selects (dropdowns) beautiful.  Make sure to load the css fixes included by default in this plugin!" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="noty" type="list" default="1" label="Load jQuery Noty" description="Use noty for unobtrusive notifications in real-time.  Better than jQuery UI by a long shot." >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+
+				<field name="icomoon" type="list" default="1" label="Load icoMoon Icons" description="Load a pack of 400 carefully-selected CSS icons which can scale to any size you want.  For a list of all icons, please view the index.html file inside the icomoon folder of the CSS folder included in this plugin." >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+				<field name="animate" type="list" default="1" label="Load Animate.css" description="Load a comprehensive set of 200+ CSS3 animations, all made for you.  For more information, Google animate.css" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+			</fieldset>
+		<fieldset name="advanced">
+				<field name="customadminjs" type="text" default="custom-admin.js" size="80" label="Administrator JS file" description="Enter the file name for your admin-specific javascript file.  Make sure it's in the js folder of the plugins/system/awesomeizer/js folder." />
+				<field name="customsitejs" type="text" default="custom-site.js" size="80" label="Front-end Site JS File" description="Enter the file name for your site-specific javascript file.  This file is loaded when people visit your site.  Please specify the file, without directorys, and include the file extension .js." />
+				<field name="customadmincss" type="text" default="custom-admin.css" size="80" label="Administrator CSS File" description="Enter the name for a CSS file specific for your admin back-end you would like to load." />
+				<field name="customsitecss" type="text" default="custom-site.css" size="80" label="Front-end Site CSS File" description="Enter the name for a CSS file specific for your site you would like to load." />
+				<field name="ajax" type="list" default="0" label="Ajaxify entire Admin Backend?" description="Ajaxify your entire admin back-end.  WARNING: this is highly experimental and could break your site.  Please back up your site with Akeeba Backup before using this option.  I am not responsible for your loss of data.  (RT Mission Control only)" >
+				   <option value="0">No</option>
+				   <option value="1">Yes</option>
+				</field>
+        
+    	</fieldset>
+	</fields>
+	</config>
+</extension>
