@@ -122,7 +122,8 @@ class plgSystemAwesomeizer extends JPlugin {
 			}
 			if ($icomoon == 1) {
 				$document->addStyleSheet(JURI::base(). "plugins/system/awesomeizer/css/IcoMoon/style.css");
-				$document->addCustomTag("<!--[if lte IE 7]><script src= \"" . JURI::base(). "plugins/system/awesomeizer/css/IcoMoon/lte-ie7.js" . "\"><![endif]-->");
+				/*$document->addCustomTag("<!--[if lte IE 7]><script src= \"" . JURI::base(). "plugins/system/awesomeizer/css/IcoMoon/lte-ie7.js" . "\"><![endif]-->")
+				TODO: fix this so that IE - can be happy*/;
 			}
 
 			if (JFile::exists(JPATH_SITE. "/plugins/system/awesomeizer/css/" . $customsitecss)) {
